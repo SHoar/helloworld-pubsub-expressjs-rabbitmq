@@ -23,7 +23,7 @@ If this producer is communicating properly with the RabbitMQ, you should see the
 ```sh
 ...
 helloworld-pubsub-expressjs-rabbitmq-producer-1  | Producer service listening at http://localhost:3000
-helloworld-pubsub-expressjs-rabbitmq-producer-1  |  [x[ Sent Hello World
+helloworld-pubsub-expressjs-rabbitmq-producer-1  |  [x] Sent Hello World
 ...
 ```
 
