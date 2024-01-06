@@ -3,8 +3,12 @@ This is a containerized pub-sub starter project that demonstrates communication 
 
 ## Requirements
 You must have Docker, Docker-Compose, and/or Node.js 20.10.0 installed on your system.
+If you would like to contribute, the code was written in typescript.
 
-### Get up and Running!
+You may compile the typescript code with `npx tsc` in the consumer-svc and producer-svc folders and have the javaScript built to their respective `./build/` folders.
+
+
+## Get up and Running!
 
 ```sh
 docker-compose up --build
