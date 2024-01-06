@@ -39,7 +39,7 @@ helloworld-pubsub-expressjs-rabbitmq-consumer-1  |  [*] Waiting for messages in 
 ```
 and if the consumer service successfully receiveds the messages,:
 ```sh
-helloworld-pubsub-expressjs-rabbitmq-consumer-1  |  [x] Received Hello
+helloworld-pubsub-expressjs-rabbitmq-consumer-1  |  [x] Received Hello World
 ```
 
 To do a grep on the consumer service logs,
