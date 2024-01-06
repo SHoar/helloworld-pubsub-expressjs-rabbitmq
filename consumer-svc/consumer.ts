@@ -1,6 +1,6 @@
 import amqp, { Channel, Connection } from 'amqplib';
 
-const queue: string = 'Hello';
+const queue: string = 'hello';
 
 async function start() {
     let channel: Channel, connection: Connection;
@@ -10,9 +10,9 @@ async function start() {
     await channel.assertQueue(queue, { durable: false });
 
     console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue)
-    channel.consume(queue, (msg) => {
+    channel.consume(queue, (msg: any) => {
         if(msg !== null){
-            console.log(" [x] Received %s", msg?.content.toString());
+            console.log(" [x] Received %s", msg?.content?.toString());
         }
     }, { noAck: true });
 }

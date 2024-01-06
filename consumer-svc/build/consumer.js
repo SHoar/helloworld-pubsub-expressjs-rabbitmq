@@ -20,7 +20,7 @@ function start() {
         const channel = yield connection.createChannel();
         yield channel.assertQueue(queue, { durable: false });
         console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", channel.consume(queue, (msg) => {
-            console.log(" [x] Received %s", msg === null || msg === void 0 ? void 0 : msg.content.toString());
+            console.log(" [x] Received %s", msg?.content?.toString());
         }, { noAck: true }));
     });
 }

@@ -18,7 +18,7 @@ async function start() {
   app.get('/send', async (req, res) => {
     const msg: string = 'Hello World';
     await channel.sendToQueue(queue, Buffer.from(msg));
-    console.log(" [x[ Sent %s", msg);
+    console.log(" [x] Sent %s", msg);
     res.send("Message sent: " + msg);
   });
 
